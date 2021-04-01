@@ -104,4 +104,4 @@ theme: cactus
 deploy:
   type: 'git'
   repository: git@github.com:dandeilit/dandeilit.github.io.git
-  branch: main
+  branch: deploy
