@@ -43,6 +43,7 @@ jobs:
         git config --global user.email 'dande.i.lit@gmail.com'
     - name: Deploy Hexo 
       run: |
+        git submodule update --init --recursive
         hexo clean
         hexo generate 
         hexo deploy
