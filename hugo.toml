@@ -1,0 +1,10 @@
+baseURL = 'https://dandeilit.github.io/'
+languageCode = 'zh-cn'
+title = 'dandeilit’s blog'
+theme = 'PaperMod'
+
+[params]
+homeInfoParams = {Title = '信言不美，美言不信'}
+socialIcons = [
+    {name = 'github',url = 'https://github.com/dandeilit'}
+]
