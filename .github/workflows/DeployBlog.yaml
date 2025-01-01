@@ -3,32 +3,39 @@ name: Deploy Hugo site to Pages
 
 on:
   # Runs on pushes targeting the default branch
+  # 触发条件，当对 main 分支进行推送时执行
   push:
     branches:
       - main
 
   # Allows you to run this workflow manually from the Actions tab
+  # 允许手动执行此工作流程
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# 设置 GITHUB_TOKEN 的权限以允许部署到 GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# 仅允许一项并发部署，跳过正在进行的运行和最新排队的运行之间排队的运行。
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# 但是，请勿取消正在进行的运行，因为我们希望这些生产部署完成。
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 # Default to bash
+# 默认 shell 设置为 bash
 defaults:
   run:
     shell: bash
 
 jobs:
   # Build job
+  # 编译
   build:
     runs-on: ubuntu-latest
     env:
@@ -69,6 +76,7 @@ jobs:
           path: ./public
 
   # Deployment job
+  # 部署
   deploy:
     environment:
       name: github-pages
