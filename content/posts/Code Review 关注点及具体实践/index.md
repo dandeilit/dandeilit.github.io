@@ -1,7 +1,10 @@
 +++
 title = 'Code Review 关注点及具体实践'
 date = 2024-01-01T21:51:10+08:00
-draft = false
+
+[cover]
+hiddenInList = false
+image = './posts/code-review-关注点及具体实践/images/Code%20Review%20Pyramid.png'
 +++
 
 ## 什么是 Code Review？
