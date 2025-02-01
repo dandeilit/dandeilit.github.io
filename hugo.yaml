@@ -1,6 +1,7 @@
 baseURL: "https://dandeilit.github.io/"
 title: dandeilit’s blog
-paginate: 5
+pagination:
+  pagerSize: 5
 theme: PaperMod
 languageCode: zh
 
